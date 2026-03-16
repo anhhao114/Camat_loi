@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sắc Mai Vàng Chào Xuân — Nhật Ký Lớp 11H</title>
+    <meta name="description" content="Lớp 11H cùng nhau trang trí cây mai ngày Tết — khoảnh khắc sum vầy ấm áp của đại gia đình 11H.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.css">
+</head>
+<body class="has-breadcrumb">
+
+<!-- Breadcrumb navigation -->
+<nav class="breadcrumb-nav" aria-label="Điều hướng">
+    <a href="../index.html">
+        <span aria-hidden="true">←</span> Nhật Ký Lớp 11
+    </a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Cây Mai Tết</span>
+</nav>
+
+    <header class="hero-banner">
+        <div class="sunbeams"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Sắc Mai Vàng Chào Xuân</h1>
+            <p class="hero-subtitle">Khoảnh khắc sum vầy của đại gia đình 11H</p>
+        </div>
+    </header>
+
+    <main class="container" id="gallery">
+        <div class="content-card reveal">
+            <h2 class="text-center mb-4">Ấm Áp Ngày Xuân</h2>
+            <p class="text-center mb-5">Khi những cánh én chao nghiêng báo hiệu xuân về, thầy và trò lớp 11H lại cùng nhau quây quần bên cây mai vàng, tô điểm cho không khí Tết thêm rộn ràng, ấm áp. Mỗi chiếc bao lì xì, mỗi câu đối đỏ được treo lên không chỉ là trang trí, mà còn là gửi gắm bao ước nguyện cho một năm mới an khang, thịnh vượng và thật nhiều niềm vui.</p>
+            
+            <div class="row">
+                <div class="col-md-6 media-placeholder reveal">
+                    <img src="Cây mai/480570597_122238972248020345_222265652503294287_n.jpg" alt="Lớp 11H trang trí cây mai Tết - ảnh 1" loading="lazy">
+                </div>
+                <div class="col-md-6 media-placeholder reveal">
+                    <img src="Cây mai/480572428_122238972458020345_202180094525373410_n.jpg" alt="Lớp 11H trang trí cây mai Tết - ảnh 2" loading="lazy">
+                </div>
+                <div class="col-md-6 media-placeholder reveal">
+                    <img src="Cây mai/480677409_122238972272020345_5610057110812106033_n.jpg" alt="Lớp 11H trang trí cây mai Tết - ảnh 3" loading="lazy">
+                </div>
+                <div class="col-md-6 media-placeholder reveal">
+                    <img src="Cây mai/481153079_122238971864020345_4796971458265507236_n.jpg" alt="Lớp 11H trang trí cây mai Tết - ảnh 4" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lớp 11H - Đón Tết Bính Ngọ</p>
+    </footer>
+
+<!-- Back to top -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Về đầu trang" title="Về đầu trang">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Lightbox
+            const gallery = new Viewer(document.getElementById('gallery'), {
+                inline: false,
+                toolbar: {
+                    zoomIn: 1, zoomOut: 1, oneToOne: 1, reset: 1,
+                    prev: 1, play: { show: 1, size: 'large' }, next: 1,
+                    rotateLeft: 1, rotateRight: 1, flipHorizontal: 1, flipVertical: 1,
+                },
+            });
+
+            // Scroll reveal
+            const revealObserver = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        revealObserver.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+            // Back to top
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            backToTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            // Breadcrumb
+            const breadcrumb = document.querySelector('.breadcrumb-nav');
+            if (breadcrumb) {
+                window.addEventListener('scroll', () => {
+                    breadcrumb.classList.toggle('scrolled', window.scrollY > 10);
+                }, { passive: true });
+            }
+        });
+    </script>
+
+<script src="../petals.js"></script>
+</body>
+</html>
