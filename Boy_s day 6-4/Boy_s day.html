@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+ <html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boy's Day 6/4 — Nhật Ký Lớp 11H</title>
+    <meta name="description" content="Boy's Day 6/4/2025 — Cuộc truy tìm kho báu đầy thú vị của đoàn hải tặc 11H.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-breadcrumb">
+
+<!-- Breadcrumb navigation -->
+<nav class="breadcrumb-nav" aria-label="Điều hướng">
+    <a href="../index.html">
+        <span aria-hidden="true">←</span> Nhật Ký Lớp 11
+    </a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Boy's Day 6/4</span>
+</nav>
+
+    <header class="hero-banner">
+        <div class="sunbeams"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">BOY'S DAY - NGÀY QUỐC TẾ CỦA CON TRAI</h1>
+            <p class="hero-subtitle">Cuộc truy tìm khó báu của đoàn hải tặc 11H</p>
+        </div>
+    </header>
+
+    <main class="container" id="gallery">
+        <div class="content-card text-center">
+            <h2> Hải Trình Của Đoàn Thám Hiểm 11H</h2>
+            <hr style="width: 100px; margin: 15px auto; border-color: var(--primary-color);">
+            
+            <div class="text-start mb-4">
+                <p>Vào buổi sớm mai trong ngày 6/4/2025, các bạn nam lớp 11H bỗng dưng nhìn thấy những tờ giấy "truy nã" của mình được dán quanh lớp và hành lang tầng 1 dãy B của trường. Và rồi, các bạn nam đã nhận được một thông báo để cùng nhau truy tìm những kho báu đang được giấu khắp trường bằng những mảnh bản đồ cũng như những câu đố khó nhằn.</p>
+                <p>Bằng sự nhạy bén và kiên trì của mình, tất cả các "hải nam" đã tìm được những khó báu quý giá, chứa đựng những lời chúc, những tình cảm trân quý của các bạn nữ dành tặng cho các bạn nam của lớp.</p>
+            </div>
+
+            <div class="media-placeholder">
+                <img src="Truy nã.jpg" alt="Những tờ giấy truy nã trong Boy's Day 11H" loading="lazy">
+                <p class="mt-2 fst-italic text-muted">Những chuyến đi săn</p>
+                <img src="đoàn.jpg" alt="Đoàn hải nam lớp 11H trong Boy's Day" loading="lazy">
+                <p class="mt-2 fst-italic text-muted">Đoàn "hải nam" của 11H</p>
+                <img src="Lớp 6-4.jpg" alt="Cả lớp 11H chụp hình cùng nhau ngày Boy's Day 6/4" loading="lazy">
+                <p class="mt-2 fst-italic text-muted">Tụi mình chụp hình cùng nhau</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/b9-lCQhTyXQ?si=2kbMPuWWl9fsZxJk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tập thể lớp 11H - Đại hải trình - Boy's day</p>
+    </footer>
+
+<!-- Back to top -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Về đầu trang" title="Về đầu trang">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Viewer(document.getElementById('gallery'));
+
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            backToTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            const breadcrumb = document.querySelector('.breadcrumb-nav');
+            if (breadcrumb) {
+                window.addEventListener('scroll', () => {
+                    breadcrumb.classList.toggle('scrolled', window.scrollY > 10);
+                }, { passive: true });
+            }
+        });
+    </script>
+<script src="../petals.js"></script>
+</body>
+</html>

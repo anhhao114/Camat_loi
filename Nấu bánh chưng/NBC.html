@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nấu Bánh Chưng — Nhật Ký Lớp 11H</title>
+    <meta name="description" content="Lớp 11H cùng nhau nấu bánh chưng ngày giáp Tết — ký ức ấm áp bên bếp lửa và những câu chuyện không quên.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-breadcrumb">
+
+<!-- Breadcrumb navigation -->
+<nav class="breadcrumb-nav" aria-label="Điều hướng">
+    <a href="../index.html">
+        <span aria-hidden="true">←</span> Nhật Ký Lớp 11
+    </a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Nấu Bánh Chưng</span>
+</nav>
+
+    <header class="hero-banner">
+        <div class="sunbeams"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Nấu bánh chưng</h1>
+            <p class="hero-subtitle">Ký ức ấm áp bên bếp lửa ngày giáp Tết</p>
+        </div>
+    </header>
+
+    <main class="container" id="gallery">
+        <div class="content-card">
+            <p>
+              Trong cái se lạnh của những ngày giáp Tết, ánh lửa bập bùng từ nồi bánh chưng
+              không chỉ làm chín hạt gạo nếp, mà dường như còn
+              <span class="text-highlight">sưởi ấm cả những tâm hồn đang tuổi lớn</span>.
+              Bên bếp lửa, chúng mình kể cho nhau những câu chuyện,
+              những lời tâm sự về ước mơ, hoài bão hay những áp lực học hành,
+              lo âu về tương lai.
+            </p>
+        </div>
+        <div class="content-card">
+            <div id="image-gallery">
+                <div class="gallery-column">
+                    <img src="NBC1.jpg" alt="Lớp 11H nấu bánh chưng ngày Tết - ảnh 1" loading="lazy">
+                    <img src="NBC3.jpg" alt="Lớp 11H nấu bánh chưng ngày Tết - ảnh 3" loading="lazy">
+                    <img src="NBC5.jpg" alt="Lớp 11H nấu bánh chưng ngày Tết - ảnh 5" loading="lazy">
+                </div>
+                <div class="gallery-column">
+                    <img src="NBC2.jpg" alt="Lớp 11H nấu bánh chưng ngày Tết - ảnh 2" loading="lazy">
+                    <img src="NBC4.jpg" alt="Lớp 11H nấu bánh chưng ngày Tết - ảnh 4" loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="content-card">
+            <p>
+              "Cảm ơn các bạn vì đã biến những giờ phút chờ đợi dài đằng đẵng
+              thành một <span class="text-highlight">ký ức lấp lánh</span>.
+              Cảm ơn vì đã không để mình cô đơn giữa bóng đêm,
+              đã cùng chia nhau củ khoai nướng cháy sém nhưng ngọt lịm,
+              và cùng cười vang khi mặt đứa nào cũng lấm lem than bùn."
+            </p>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Lớp 11H - Nấu bánh chưng</p>
+    </footer>
+
+<!-- Back to top -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Về đầu trang" title="Về đầu trang">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Viewer(document.getElementById('gallery'));
+
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            backToTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            const breadcrumb = document.querySelector('.breadcrumb-nav');
+            if (breadcrumb) {
+                window.addEventListener('scroll', () => {
+                    breadcrumb.classList.toggle('scrolled', window.scrollY > 10);
+                }, { passive: true });
+            }
+        });
+    </script>
+
+<script src="../petals.js"></script>
+</body>
+</html>

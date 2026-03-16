@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11H – Chuyên Hóa – Kỷ Niệm Năm Học — Nhật Ký Lớp 11H</title>
+    <meta name="description" content="Kỷ niệm đáng nhớ của lớp 11H Chuyên Hóa — THPT Chuyên Hùng Vương. Những bức ảnh ghi lại thanh xuân trong trẻo.">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../shared-styles.css">
+    <style>
+        /* CSS riêng cho gallery kỉ niệm */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto 80px;
+            padding: 0 20px;
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin: 50px 0 30px;
+            font-family: var(--font-heading);
+            font-size: var(--text-4xl);
+            color: var(--color-primary);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-card);
+            transition: transform var(--transition-base);
+            cursor: pointer;
+            display: block;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 2000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.92);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 85%;
+            max-height: 85vh;
+            border-radius: var(--radius-md);
+        }
+
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: var(--color-primary-light);
+        }
+
+        .text-highlight {
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="has-breadcrumb">
+
+<!-- Breadcrumb navigation -->
+<nav class="breadcrumb-nav" aria-label="Điều hướng">
+    <a href="../../index.html">
+        <span aria-hidden="true">←</span> Nhật Ký Lớp 11
+    </a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Kỷ Niệm 11H</span>
+</nav>
+
+<!-- HERO -->
+<section class="hero-banner">
+    <div class="hero-content">
+        <h1 class="hero-title">11H – Chuyên Hóa</h1>
+        <p class="hero-subtitle">THPT Chuyên Hùng Vương • Thanh xuân rực rỡ</p>
+    </div>
+</section>
+
+<div class="container">
+
+    <!-- NỘI DUNG -->
+    <div class="content-card reveal">
+        <p>
+            Có những bức ảnh, khi nhìn lại, ta bất giác mỉm cười. Không phải vì tấm ảnh quá hoàn hảo,
+            mà bởi trong đó là cả một quãng thanh xuân trong trẻo.
+        </p>
+
+        <p>
+            11H – Chuyên Hóa – THPT Chuyên Hùng Vương. Những buổi học Hóa đầy công thức,
+            những giờ ra chơi ngắn ngủi và những lần cùng nhau than bài khó.
+        </p>
+
+        <p>
+            Lớp 11 không quá ồn ào, cũng chẳng vội vã, nhưng lại là khoảng thời gian dễ thương nhất.
+        </p>
+
+        <p>
+            Rồi sau này, mỗi người một hành trình riêng, nhưng ai cũng từng tự hào khi nói:
+            <span class="text-highlight">"Mình đã từng là 11H."</span>
+        </p>
+
+        <p>
+            Cảm ơn 11H vì một thanh xuân thật đẹp 💖
+        </p>
+    </div>
+
+    <!-- GALLERY -->
+    <h2 class="gallery-title">Khoảnh khắc của 11H 📸</h2>
+
+    <div class="gallery-grid" id="galleryGrid">
+        <img src="anh1.jpg" alt="Kỷ niệm 11H - ảnh 1" loading="lazy">
+        <img src="anh2.jpg" alt="Kỷ niệm 11H - ảnh 2" loading="lazy">
+        <img src="anh3.jpg" alt="Kỷ niệm 11H - ảnh 3" loading="lazy">
+        <img src="anh4.jpg" alt="Kỷ niệm 11H - ảnh 4" loading="lazy">
+        <img src="anh5.jpg" alt="Kỷ niệm 11H - ảnh 5" loading="lazy">
+        <img src="anh6.jpg" alt="Kỷ niệm 11H - ảnh 6" loading="lazy">
+        <img src="anh7.jpg" alt="Kỷ niệm 11H - ảnh 7" loading="lazy">
+        <img src="anh8.jpg" alt="Kỷ niệm 11H - ảnh 8" loading="lazy">
+        <img src="anh9.jpg" alt="Kỷ niệm 11H - ảnh 9" loading="lazy">
+        <img src="anh10.jpg" alt="Kỷ niệm 11H - ảnh 10" loading="lazy">
+        <img src="anh11.jpg" alt="Kỷ niệm 11H - ảnh 11" loading="lazy">
+    </div>
+
+</div>
+
+<footer>
+    <p>© 11H – Chuyên Hóa – THPT Chuyên Hùng Vương 💙</p>
+    <p>Thanh xuân vẫn luôn ở đó</p>
+</footer>
+
+<!-- Back to top -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Về đầu trang" title="Về đầu trang">↑</a>
+
+<div id="imageModal" class="modal" role="dialog" aria-modal="true" aria-label="Xem ảnh phóng to">
+    <span class="close" aria-label="Đóng">&times;</span>
+    <img class="modal-content" id="modalImage" alt="">
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+        const images = document.querySelectorAll('.gallery-grid img');
+        const closeModal = document.querySelector('.close');
+
+        images.forEach(img => {
+            img.addEventListener('click', function() {
+                modal.style.display = 'flex';
+                modalImg.src = this.src;
+                modalImg.alt = this.alt;
+            });
+        });
+
+        const close = () => { modal.style.display = 'none'; }
+
+        closeModal.addEventListener('click', close);
+        modal.addEventListener('click', (e) => { if (e.target === modal) close(); });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+
+        // Scroll reveal
+        const revealObserver = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+        // Back to top
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            backToTop.classList.toggle('visible', window.scrollY > 300);
+        }, { passive: true });
+        backToTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+        // Breadcrumb
+        const breadcrumb = document.querySelector('.breadcrumb-nav');
+        if (breadcrumb) {
+            window.addEventListener('scroll', () => {
+                breadcrumb.classList.toggle('scrolled', window.scrollY > 10);
+            }, { passive: true });
+        }
+    });
+</script>
+
+<script src="../../petals.js"></script>
+</body>
+</html>
