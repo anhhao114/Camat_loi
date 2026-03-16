@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quốc Tế Nam Giới 19/11 — Nhật Ký Lớp 11H</title>
+    <meta name="description" content="Ngày Quốc Tế Nam Giới 19/11 đặc biệt của lớp 11H — những bất ngờ và tình cảm từ các bạn nữ gửi đến các bạn nam.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-breadcrumb">
+
+<!-- Breadcrumb navigation -->
+<nav class="breadcrumb-nav" aria-label="Điều hướng">
+    <a href="../index.html">
+        <span aria-hidden="true">←</span> Nhật Ký Lớp 11
+    </a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Quốc Tế Nam Giới 19/11</span>
+</nav>
+
+    <header class="hero-banner">
+        <div class="sunbeams"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Quốc Tế Nam Giới 19/11</h1>
+            <p class="hero-subtitle">Những Khoảnh Khắc Đáng Nhớ</p>
+        </div>
+    </header>
+
+    <main class="container" id="gallery">
+        <div class="content-card">
+            <h2>Một ngày tưởng bình thường nhưng đầy bất ngờ</h2>
+            <p>
+              Ngày 19/11 vốn dĩ rất nhẹ nhàng, nhưng năm nay lại trở nên đặc biệt hơn bao giờ hết.
+              Nhờ sự chuẩn bị chu đáo và tinh tế của các bạn nữ, không khí lớp học trở nên rực rỡ,
+              vui tươi và tràn ngập những điều bất ngờ dành riêng cho các bạn nam.
+            </p>
+            <div class="media-placeholder">
+              <img src="nam19-11.jpg" alt="Lớp 11H mừng Quốc tế Nam giới 19/11" loading="lazy">
+            </div>
+        </div>
+
+        <div class="content-card" style="background-color: #f8f0ff;">
+            <h2>Lời chúc gửi đến các bạn nam</h2>
+            <p>
+              📣 Dù món quà có hơi muộn một chút, nhưng tình cảm của các bạn nữ lớp 11H
+              thì chưa bao giờ là muộn cả!<br>
+              Chúc các bạn nam luôn tự tin, học giỏi, vui vẻ và giữ được sự nhiệt huyết của tuổi học trò.<br>
+              Mong các bạn mãi là những chàng trai tử tế, mạnh mẽ và đáng yêu của lớp mình! 💙
+            </p>
+        </div>
+        
+        <div class="content-card">
+            <div class="row">
+                <div class="col-md-6 media-placeholder">
+                    <img src="19-11.jpg" alt="Ảnh lớp 11H ngày 19/11 - ảnh 1" loading="lazy">
+                </div>
+                <div class="col-md-6 media-placeholder">
+                    <img src="19-11-2.jpg" alt="Ảnh lớp 11H ngày 19/11 - ảnh 2" loading="lazy">
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Một món quà nhỏ – Tấm lòng lớn</h2>
+            <p>
+              Những món quà và lời chúc không chỉ thể hiện sự quan tâm,
+              mà còn là cách các bạn nữ gửi gắm tình cảm chân thành đến những người bạn đồng hành mỗi ngày.
+              Dù đơn giản, nhưng đó là những điều khiến ngày 19/11 trở nên thật ý nghĩa.
+            </p>
+            <div class="text-center">
+              <iframe src="S19-11.html" width="100%" height="400" title="Thư gửi các bạn nam 19/11"></iframe>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>Lời cảm ơn từ các bạn nam</h2>
+            <p>
+              Tập thể các bạn nam xin gửi lời cảm ơn sâu sắc đến các "thiên thần nhỏ" của lớp.
+              Có lẽ món quà tuyệt vời nhất chính là sự quan tâm và tình cảm chân thành mà các bạn dành tặng.
+              Cảm ơn các bạn đã biến ngày 19/11 trở thành một kỷ niệm thật đẹp và khó quên!
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lớp 11H - Quốc tế Nam giới</p>
+    </footer>
+
+<!-- Back to top -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Về đầu trang" title="Về đầu trang">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Viewer(document.getElementById('gallery'));
+
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            backToTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            const breadcrumb = document.querySelector('.breadcrumb-nav');
+            if (breadcrumb) {
+                window.addEventListener('scroll', () => {
+                    breadcrumb.classList.toggle('scrolled', window.scrollY > 10);
+                }, { passive: true });
+            }
+        });
+    </script>
+<script src="../petals.js"></script>
+</body>
+</html>

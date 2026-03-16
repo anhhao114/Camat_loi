@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+ <html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hoan Cuối Học Kỳ — Nhật Ký Lớp 11H</title>
+    <meta name="description" content="Buổi liên hoan tổng kết học kỳ I 2024-2025 của lớp 11H — những tiếng cười và kỷ niệm không thể nào quên.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-breadcrumb">
+
+<!-- Breadcrumb navigation -->
+<nav class="breadcrumb-nav" aria-label="Điều hướng">
+    <a href="../index.html">
+        <span aria-hidden="true">←</span> Nhật Ký Lớp 11
+    </a>
+    <span class="breadcrumb-sep" aria-hidden="true">/</span>
+    <span class="breadcrumb-current">Liên Hoan</span>
+</nav>
+
+    <header class="hero-banner">
+        <div class="sunbeams"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">LIÊN HOAN</h1>
+            <p class="hero-subtitle">Buổi tiệc tổng kết hành trình</p>
+        </div>
+    </header>
+    <main class="container" id="gallery">
+        <div class="content-card text-center">
+            <h2> Kết lại học kì I 2024-2025 </h2>
+            <hr style="width: 100px; margin: 15px auto; border-color: var(--primary-color);">
+            <div class="text-start mb-4">
+                <p>Vậy là học kì I của năm học 2024-2025 đã trôi qua, tập thể lớp H k28 chúng mình đã cùng nhau đi qua được một nửa hành trình, vui có mà buồn thì cũng không thiếu. Nhằm nhìn lại một chặng đường đã qua và nhìn đến hành trình phía trước, chúng mình đã cùng nhau tổ chức một buổi liên hoan.</p>
+                <p>Buổi liên hoan của lớp diễn ra trong bầu không khí rộn ràng, tràn ngập tiếng cười và những cảm xúc rất khó gọi tên. Ngay từ lúc bắt đầu, cả không gian đã trở nên ấm áp hơn bởi sự háo hức và tinh thần gắn kết của mọi người. Những món ăn được các bạn chuẩn bị, những tấm bảng được trang trí ngẫu hứng và những bản nhạc vui vang lên đã khiến khoảng thời gian ấy trở nên thật đặc biệt. Trong buổi liên hoan, những câu chuyện vui được kể lại, những kỷ niệm cũ được nhắc đến bằng nụ cười rạng rỡ, khiến ai cũng cảm thấy gần nhau hơn. Không khí không hề nặng nề, mà ngược lại, tràn đầy sự tươi trẻ và năng lượng tích cực của tuổi học trò. Những bức ảnh chụp chung, những khoảnh khắc tưởng chừng rất bình thường lại trở thành điều đáng nhớ nhất. Khi buổi liên hoan khép lại, niềm vui vẫn còn đọng lại trong từng ánh mắt, để rồi khi nhớ về, đó sẽ luôn là một ký ức đẹp gắn liền với tình bạn và những ngày tháng đã cùng nhau trải qua.</p>
+            </div>
+            <div class="media-placeholder">
+                <img src="lh1.jpg" alt="Tập thể lớp 11H trong buổi liên hoan học kỳ I" loading="lazy">
+                <p class="mt-2 fst-italic text-muted"> Tập thể lớp</p>
+                <img src="lh2.jpg" alt="Tập thể lớp 11H nâng ly trong buổi liên hoan" loading="lazy">
+                <p class="mt-2 fst-italic text-muted"> Tập thể lớp nâng ly</p>
+                <img src="sc.jpg" alt="Secret từ các bạn đội tuyển Quốc gia" loading="lazy">
+                <p class="mt-2 fst-italic text-muted"> Secret từ các bạn đội tuyển Quốc gia</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tập thể lớp 11H - Liên hoan</p>
+    </footer>
+
+<!-- Back to top -->
+<a href="#" id="backToTop" class="back-to-top" aria-label="Về đầu trang" title="Về đầu trang">↑</a>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.11.3/viewer.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            new Viewer(document.getElementById('gallery'));
+
+            const backToTop = document.getElementById('backToTop');
+            window.addEventListener('scroll', () => {
+                backToTop.classList.toggle('visible', window.scrollY > 300);
+            }, { passive: true });
+            backToTop.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+
+            const breadcrumb = document.querySelector('.breadcrumb-nav');
+            if (breadcrumb) {
+                window.addEventListener('scroll', () => {
+                    breadcrumb.classList.toggle('scrolled', window.scrollY > 10);
+                }, { passive: true });
+            }
+        });
+    </script>
+<script src="../petals.js"></script>
+</body>
+</html>
